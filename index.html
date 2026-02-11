@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <div class ="box1">
+        <h1>Stock Dividend Calculator</h1>
+        <input type ="text" class="stock-name" placeholder="Stock Name">
+        <br>
+        <input type ="number" class="dps" placeholder="DPS (Annual)">
+        <br>
+        <input type ="number" class="shares" placeholder="Number of Shares">
+    </div>
+
+    <div class="box2">
+    <button onclick="addStock()">add</button>
+    <button onclick="calculateTotal()">Calculate</button>
+
+    <h2 id="yearly"></h2>
+    <h2 id="monthly"></h2>
+    <canvas id="chart"></canvas>
+    </div>
+
+    <script src="index.js"></script>  
+</body>
+</html>
